@@ -77,6 +77,9 @@ Features
 Todo
 ====
 
+-	graph
+	- cli
+		- https://github.com/gizak/termui
 -	look at (and possibly implement) some techniques from others packages:
 	-	http://make.rafflecopter.com/side-project-jon-haskell.html
 	-	[bateman](https://github.com/fearofcode/bateman)
