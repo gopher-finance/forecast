@@ -1,7 +1,7 @@
 .PHONY: all gofinance test build fmt vet clean release lint errcheck install update release release-check release-copy release-build release-dirs dep_install dep_update
 
 DIST := dist
-EXECUTABLE := gofinance
+EXECUTABLE := forecast
 
 TAGS ?=
 TARGETS ?= linux darwin windows
