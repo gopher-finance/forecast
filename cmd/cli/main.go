@@ -5,9 +5,9 @@ import (
 
 	kingpin "gopkg.in/alecthomas/kingpin.v2"
 
-	"github.com/gopher-finance/forecaster"
-	"github.com/gopher-finance/forecaster/sources/bloomberg"
-	"github.com/gopher-finance/forecaster/sources/yahoofinance"
+	"github.com/gopher-finance/forecast"
+	"github.com/gopher-finance/forecast/sources/bloomberg"
+	"github.com/gopher-finance/forecast/sources/yahoofinance"
 )
 
 // Variables linked during build
@@ -16,7 +16,7 @@ var (
 	Githash    string
 	Buildstamp string
 	AppName    string
-	SourcesMap map[string]forecaster.Source
+	SourcesMap map[string]forecast.Source
 
 	symbols = kingpin.Flag("symbols", "ticker symbols to analyze").Short('s').Required().Strings()
 	source  = kingpin.Flag("source", "bloomberg || yahoo_yql || yahoo_csv").
@@ -24,7 +24,7 @@ var (
 )
 
 func init() {
-	SourcesMap = map[string]forecaster.Source{
+	SourcesMap = map[string]forecast.Source{
 		"bloomberg": bloomberg.New(),
 		"yahoo_yql": yahoofinance.NewYql(),
 		"yahoo_csv": yahoofinance.NewCsv()}

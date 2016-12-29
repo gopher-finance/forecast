@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/gopher-finance/forecaster"
-	"github.com/gopher-finance/forecaster/models"
+	"github.com/gopher-finance/forecast"
+	"github.com/gopher-finance/forecast/models"
 )
 
 const (
@@ -21,11 +21,11 @@ type Source struct {
 	srcType int
 }
 
-func NewCsv() forecaster.Source {
+func NewCsv() forecast.Source {
 	return &Source{srcType: TypeCsv}
 }
 
-func NewYql() forecaster.Source {
+func NewYql() forecast.Source {
 	return &Source{srcType: TypeYql}
 }
 

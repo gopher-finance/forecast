@@ -1,6 +1,6 @@
 package models
 
-import "github.com/gopher-finance/forecaster/utils"
+import "github.com/gopher-finance/forecast/utils"
 
 type HistEntry struct {
 	Date     utils.YearMonthDay `json:"Date"`

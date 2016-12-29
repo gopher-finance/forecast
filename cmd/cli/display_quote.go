@@ -4,10 +4,10 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/gopher-finance/forecaster/models"
+	"github.com/gopher-finance/forecast/models"
 
 	"github.com/fatih/color"
-	. "github.com/gopher-finance/forecaster/cmd/cli/term"
+	. "github.com/gopher-finance/forecast/cmd/cli/term"
 )
 
 func DisplayQuote(q *models.Quote, txCost, desiredTxCostPerc float64) string {

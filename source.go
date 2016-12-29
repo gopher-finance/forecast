@@ -1,10 +1,10 @@
-package forecaster
+package forecast
 
 import (
 	"fmt"
 	"time"
 
-	"github.com/gopher-finance/forecaster/models"
+	"github.com/gopher-finance/forecast/models"
 )
 
 type Source interface {

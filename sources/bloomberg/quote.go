@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gopher-finance/forecaster/models"
+	"github.com/gopher-finance/forecast/models"
 
 	"golang.org/x/net/html"
 )

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/gopher-finance/forecaster"
-	"github.com/gopher-finance/forecaster/models"
+	"github.com/gopher-finance/forecast"
+	"github.com/gopher-finance/forecast/models"
 )
 
 var VERBOSITY = 0
@@ -13,7 +13,7 @@ var VERBOSITY = 0
 type BloombergSource struct {
 }
 
-func New() forecaster.Source {
+func New() forecast.Source {
 	return &BloombergSource{}
 }
 

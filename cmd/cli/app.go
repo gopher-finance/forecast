@@ -6,12 +6,12 @@ import (
 	"log"
 	"strings"
 
-	"github.com/gopher-finance/forecaster"
+	"github.com/gopher-finance/forecast"
 )
 
 type App struct {
 	Symbols []string
-	Src     forecaster.Source
+	Src     forecast.Source
 }
 
 func (a *App) Run() {

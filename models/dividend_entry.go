@@ -1,6 +1,6 @@
 package models
 
-import "github.com/gopher-finance/forecaster/utils"
+import "github.com/gopher-finance/forecast/utils"
 
 type DividendEntry struct {
 	Date      utils.YearMonthDay

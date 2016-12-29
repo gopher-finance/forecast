@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gopher-finance/forecaster/models"
-	"github.com/gopher-finance/forecaster/utils"
+	"github.com/gopher-finance/forecast/models"
+	"github.com/gopher-finance/forecast/utils"
 )
 
 const (
