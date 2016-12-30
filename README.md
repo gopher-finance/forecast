@@ -1,6 +1,8 @@
 forecaster
 ==========
 
+[![Build Status](https://travis-ci.org/gopher-finance/forecast.svg?branch=master)](https://travis-ci.org/gopher-finance/forecast)
+
 Financial information retrieval and munging to automate security analysis on a large scale written in Go. Originally based in parts on [gofinance](https://github.com/aktau/gofinance).
 
 Implementations of the Source interface can be found in the sources directory:
@@ -78,8 +80,8 @@ Todo
 ====
 
 -	graph
-	- cli
-		- https://github.com/gizak/termui
+	-	cli
+		-	https://github.com/gizak/termui
 -	look at (and possibly implement) some techniques from others packages:
 	-	http://make.rafflecopter.com/side-project-jon-haskell.html
 	-	[bateman](https://github.com/fearofcode/bateman)

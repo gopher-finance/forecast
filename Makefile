@@ -22,7 +22,9 @@ vet:
 	go vet $(PACKAGES)
 
 dep_install:
-	glide install
+	@mkdir vendor &> /dev/null; if [ $$? -ne 1 ]; then \
+		glide install; \
+	fi
 
 dep_update:
 	glide up
