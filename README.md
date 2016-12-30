@@ -49,7 +49,7 @@ $ export PATH=$PATH:$GOPATH/bin
 After all that you can get the demonstration app (which will pull in all the necessary libraries automatically.
 
 ```sh
-$ go get github.com/HT808s/gofinance/gofinance
+$ go get github.com/gopher-finance/forecast
 
 # run the app, if you've added $GOPATH/bin to the PATH
 $ make dep_install
@@ -61,13 +61,13 @@ Run the app
 
 ```sh
 # check usage
-$ ./bin/gofinance --help
+$ ./bin/forecast --help
 # analyze Apple (default source=yahoo_yql)
-$ ./bin/gofinance --symbols "AAPL"
+$ ./bin/forecast --symbols "AAPL"
 # analyze Ferrari, Tesla and BMW
-$ ./bin/gofinance -s "RACE" -s "TSLA" -s "BMW.DE"
+$ ./bin/forecast -s "RACE" -s "TSLA" -s "BMW.DE"
 # run with a different source
-$ ./bin/gofinance -s "RACE" -s "TSLA" -s "BMW.DE" --source "yahoo_csv"
+$ ./bin/forecast -s "RACE" -s "TSLA" -s "BMW.DE" --source "yahoo_csv"
 ```
 
 Features
